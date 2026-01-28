@@ -1,0 +1,15 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5DC; /* Krem */
+    color: #4A4A4A;
+    line-height: 1.6;
+}
+header {
+    background-color: #A8B5A0; /* Hijau sage */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+/* Sisanya salin semua CSS dari kode asli */
