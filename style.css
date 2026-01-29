@@ -1,15 +1,216 @@
+/* Global Styles */
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F5F5DC; /* Krem */
+    background-color: #F5F5DC; /* Cream */
     color: #4A4A4A;
     line-height: 1.6;
 }
+
+/* Header */
 header {
-    background-color: #A8B5A0; /* Hijau sage */
-    padding: 20px;
-    text-align: center;
+    background-color: #A8B5A0; /* Sage Green */
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-/* Sisanya salin semua CSS dari kode asli */
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+header h1 {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    color: #F5F5DC;
+    font-size: 2em;
+}
+nav {
+    display: flex;
+    gap: 20px;
+}
+nav a {
+    color: #F5F5DC;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #D2B48C; /* Earthy Brown */
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to bottom, #A8B5A0, #F5F5DC);
+    padding: 120px 20px 80px;
+    text-align: center;
+}
+.hero-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    color: #F5F5DC;
+    margin-bottom: 20px;
+}
+.hero-content p {
+    font-size: 1.2em;
+    color: #F5F5DC;
+    margin-bottom: 30px;
+}
+.cta-button {
+    background-color: #D2B48C;
+    color: #F5F5DC;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+.cta-button:hover {
+    background-color: #B8A085;
+}
+
+/* Sections */
+.section {
+    padding: 80px 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.section h2 {
+    font-family: 'Playfair Display', serif;
+    color: #A8B5A0;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.section p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* About Us */
+.values {
+    background-color: #D2B48C;
+    padding: 30px;
+    border-radius: 8px;
+    margin: 30px 0;
+}
+.values h3 {
+    color: #F5F5DC;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+.values ul {
+    list-style: none;
+    padding: 0;
+}
+.values li {
+    margin-bottom: 10px;
+    color: #F5F5DC;
+}
+
+/* Product */
+.product-card {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.product-image {
+    flex: 1;
+    min-width: 300px;
+    height: auto;
+}
+.product-details {
+    flex: 1;
+    padding: 30px;
+    min-width: 300px;
+}
+.product-details h3 {
+    color: #A8B5A0;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+.product-details ul {
+    margin-bottom: 20px;
+}
+
+/* Contact */
+.contact-form {
+    background-color: #FFF;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #A8B5A0;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #A8B5A0;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+}
+.contact-form button {
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: #A8B5A0;
+    color: #F5F5DC;
+    padding: 40px 20px;
+    text-align: center;
+}
+.footer-links {
+    margin-top: 20px;
+}
+.footer-links a {
+    color: #F5F5DC;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+}
+.footer-links a:hover {
+    color: #D2B48C;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav {
+        margin-top: 10px;
+    }
+    .hero-content h2 {
+        font-size: 2em;
+    }
+    .product-card {
+        flex-direction: column;
+    }
+    .section {
+        padding: 60px 20px;
+    }
+}
