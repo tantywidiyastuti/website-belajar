@@ -5,44 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beautree - Natural Beauty Cases for Makeup Artists</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <!-- Link ke file CSS eksternal -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Isi HTML tetap sama, mulai dari <header> sampai <footer> -->
+    <!-- Header -->
     <header>
-        <h1>Beautree</h1>
-        <nav>
-            <a href="#about">About Us</a>
-            <a href="#product">Product</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="header-content">
+            <h1>Beautree</h1>
+            <nav>
+                <a href="#hero">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#product">Product</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <div class="container">
-        <!-- About Us Section -->
-        <section id="about" class="section">
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h2>Natural Beauty for a Sustainable World</h2>
+            <p>Empowering Makeup Artists with eco-friendly, functional beauty cases crafted from pine wood and bamboo.</p>
+            <a href="#product" class="cta-button">Discover Our Product</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section">
+        <div class="container">
             <h2>About Us</h2>
             <p>At Beautree, we embody the essence of “Natural – Functional – Thoughtful Design.” Our brand is dedicated to creating beauty cases that not only serve the practical needs of Makeup Artists (MUAs) but also align with a sustainable and thoughtful approach to craftsmanship.</p>
-            <!-- Sisanya tetap sama -->
-        </section>
+            <p>Makeup Artists often face the challenge of managing tools in cramped spaces, requiring ergonomics, portability, and efficiency. That's why we've chosen pine wood and bamboo as our primary materials – renewable, biodegradable alternatives that reduce environmental impact while offering durability and a natural aesthetic.</p>
+            <div class="values">
+                <h3>Our Values</h3>
+                <ul>
+                    <li><strong>Environmentally Friendly:</strong> Using sustainable materials to minimize our carbon footprint.</li>
+                    <li><strong>Ergonomic & Modular Design:</strong> Adjustable compartments for personalized organization.</li>
+                    <li><strong>Collaboration with Local SMEs:</strong> Empowering local artisans and supporting community-driven production.</li>
+                    <li><strong>Supporting SDGs:</strong> Contributing to Decent Work and Economic Growth (SDG 8), Industry, Innovation, and Infrastructure (SDG 9), and Responsible Consumption and Production (SDG 12).</li>
+                </ul>
+            </div>
+            <p>We believe in empowering MUAs from beginners to professionals, fostering an urban lifestyle that values sustainability and thoughtful design.</p>
+        </div>
+    </section>
 
-        <!-- Product Section -->
-        <section id="product" class="section">
-            <!-- Sisanya tetap sama -->
-        </section>
+    <!-- Product Section -->
+    <section id="product" class="section">
+        <div class="container">
+            <h2>Our Product</h2>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/500x300?text=Beautree+Beauty+Case" alt="Beautree Beauty Case" class="product-image">
+                <div class="product-details">
+                    <h3>Beautree Beauty Case</h3>
+                    <p>A revolutionary tool designed specifically for Makeup Artists. Crafted from premium pine wood and bamboo, this case combines functionality with elegance, ensuring your tools are always at hand.</p>
+                    <ul>
+                        <li><strong>Materials:</strong> Sustainable pine wood and bamboo for a natural, eco-friendly build.</li>
+                        <li><strong>Modular Design:</strong> Adjustable compartments to customize your setup.</li>
+                        <li><strong>Portability & Ergonomics:</strong> Lightweight and compact, perfect for on-the-go MUAs; designed like a low table for comfortable working.</li>
+                        <li><strong>Aesthetic:</strong> Organic curves and a natural, elegant finish that complements any environment.</li>
+                    </ul>
+                    <p>Ideal for freelance and professional MUAs, this case supports high mobility and is built to last. As an environmentally conscious choice, it promotes longevity over disposability.</p>
+                    <p><strong>Pricing & Ordering:</strong> Starting at an affordable price point, with pre-order options available. Customize your design to fit your unique needs – contact us for details.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <!-- Sisanya tetap sama -->
-        </section>
-    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Let’s collaborate or order your Beautree beauty case! We're here to connect with Makeup Artists and local SMEs for partnerships and custom solutions.</p>
+            <form class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
 
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+            <p>Alternatively, reach us at: <a href="mailto:info@beautree.com">info@beautree.com</a> or follow us on social media for updates.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2023 Beautree. Empowering sustainable beauty for Makeup Artists.</p>
+        <div class="container">
+            <p>&copy; 2023 Beautree. Empowering sustainable beauty for Makeup Artists. Join us in making a positive impact on the planet.</p>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#product">Product</a>
+                <a href="#contact">Contact</a>
+                <a href="https://www.instagram.com/beautree" target="_blank">Instagram</a>
+            </div>
+        </div>
     </footer>
 
-    <!-- Link ke file JS eksternal -->
     <script src="app.js"></script>
 </body>
 </html>
